@@ -1,4 +1,12 @@
-var users = {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Students</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+      <script>var users = {
         'Students': [
           {first_name:  'Michael', last_name : 'Jordan'},
           {first_name : 'John', last_name : 'Rosales'},
@@ -9,11 +17,13 @@ var users = {
           {first_name : 'Michael', last_name : 'Choi'},
           {first_name : 'Martin', last_name : 'Puryear'}
         ]
-      };
-      function printUsers(arr) {
-        for (var i=0; i<arr.length;i++) {
-          console.log(arr[i].first_name+' '+arr[i].last_name);
-          }
       }
-printUsers(users.Students);
-printUsers(users.Instructors);
+      function printUsers(arr) {
+        for (var i=0; i<arr.length;i++){
+          console.log(arr[i].first_name+' '+this.lastname);
+        }
+      }
+  printUsers(users);
+</script>
+  </body>
+</html>
